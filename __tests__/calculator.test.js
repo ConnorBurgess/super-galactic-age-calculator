@@ -71,6 +71,6 @@ describe('Calculator', () => {
     currentUser.lifeExpectancy = 100;
     currentUser.jupiterCalc();
     currentUser.yearsCalc();
-    expect(currentUser.yearsLeft).toEqual(52.66)
+    expect(currentUser.yearsLeft).toEqual(8.35)
   });
 });
