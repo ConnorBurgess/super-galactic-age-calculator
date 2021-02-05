@@ -20,21 +20,23 @@ Project utilizes Test Driven Development concepts (Red Green Refactor) to unit t
 
 ## Setup instructions:  
 * Clone Repo (Link: https://github.com/ConnorBurgess/super-galactic-age-calculator.git )
-* Open index.html in browser
+* Open bundle.js in browser
 
 * * *
 
 ## To Do:
 * Spinning world images
-
+* Input validator
 * * *
 
-## Addition comments:
+## Additional comments:
 * Created on 2/5/21  
 * Currently in development and unfinished (*as of 2/5/21*)
-* research how to incorporate last business logic function
 * * *
 
+## Resources used:
+* Space background [here](https://images.wallpaperscraft.com/image/space_sky_spiral_galaxy_99967_1920x1080.jpg)
+* Space Invaders image [here](https://freepngimg.com/png/32291-space-invaders-transparent-picture)
 ## License:
 > *&copy; Connor Burgess 2021*
 
