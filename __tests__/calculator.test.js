@@ -79,7 +79,10 @@ describe('Calculator', () => {
     expect(currentUser.yearsLeft).toEqual(8.35)
   });
   test('Should add to surpassExpectancy method to calculate years number of years lived past life expectancy', () => {
-
-    expect(currentUser.surpassedExpectancy).toEqual()
+    currentUser.lifeExpectancy = 0.5;
+    currentUser.jupiterCalc();
+    currentUser.yearsCalc();
+    currentUser.yearsCalc();
+    expect(currentUser.surpassExpectancy).toEqual(3.67)
   });
 });
