@@ -9,7 +9,7 @@ describe('Calculator', () => {
   });
 
   test('Should instantiate a Calculator object with properties for age, lifeExpectancy, yearsLeft, pastExpectancy, mercuryYears, venusYears, marsYears, jupiterYears', () => {
-    expect(currentUser.age).toEqual(0)
+    expect(currentUser.age).toEqual(1)
     expect(currentUser.lifeExpectancy).toEqual(0)
     expect(currentUser.yearsLeft).toEqual(0)
     expect(currentUser.pastExpectancy).toEqual("")
@@ -23,4 +23,7 @@ describe('Calculator', () => {
     currentUser.mercuryCalc();
     expect(currentUser.mercuryYears).toEqual(87.6)
   });
+//     test('Should implement method to calculator earthYears to venusYears (365 * .62', () => {
+// expect(currentUser.venusYears).toEqual()
+//     }); 
 });
