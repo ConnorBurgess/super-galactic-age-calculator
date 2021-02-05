@@ -10,7 +10,6 @@ export default class Calculator {
     this.jupiterYears = 0;
     this.earthYears = this.age * 365;
     this.activePlanet = 0;
-
   }
 
   mercuryCalc() {
@@ -35,7 +34,10 @@ export default class Calculator {
     return this.jupiterYears;
   }
   yearsCalc() {
-    this.yearsLeft = parseFloat(((this.lifeExpectancy / 0.24) - this.mercuryYears).toFixed(2));
-
+    console.log(this.activePlanet)
+    return (this.activePlanet === 1 ? this.yearsLeft = parseFloat(((this.lifeExpectancy / 0.24) - this.mercuryYears).toFixed(2))
+      : this.activePlanet === 2 ? this.yearsLeft = parseFloat(((this.lifeExpectancy / 0.62) - this.venusYears).toFixed(2))
+        : this.activePlanet);
   }
+
 }
