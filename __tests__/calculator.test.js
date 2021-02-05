@@ -14,13 +14,14 @@ describe('Calculator', () => {
     expect(currentUser.age).toEqual(1)
     expect(currentUser.lifeExpectancy).toEqual(0)
     expect(currentUser.yearsLeft).toEqual(0)
-    expect(currentUser.pastExpectancy).toEqual("")
+    expect(currentUser.pastExpectancy).toEqual(0)
     expect(currentUser.mercuryYears).toEqual(0)
     expect(currentUser.venusYears).toEqual(0)
     expect(currentUser.marsYears).toEqual(0)
     expect(currentUser.jupiterYears).toEqual(0)
     expect(currentUser.earthYears).toEqual(365)
     expect(currentUser.activePlanet).toEqual(0)
+    expect(currentUser.surpassedExpectancy).toEqual(0)
   });
 
   test('Should create mercuryCalc method to calculate earthYears to mercuryYears (this.earthYears / (365 * 0.24))', () => {
@@ -72,5 +73,9 @@ describe('Calculator', () => {
     currentUser.jupiterCalc();
     currentUser.yearsCalc();
     expect(currentUser.yearsLeft).toEqual(8.35)
+  });
+  test('Should add to surpassExpectancy method to calculate years number of years lived past life expectancy', () => {
+
+    expect(currentUser.surpassedExpectancy).toEqual()
   });
 });
