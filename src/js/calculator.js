@@ -34,5 +34,8 @@ export default class Calculator {
     this.jupiterYears = parseFloat(this.jupiterYears.toFixed(2));
     return this.jupiterYears;
   }
+  yearsCalc() {
+    this.yearsLeft = parseFloat(((this.lifeExpectancy / 0.24) - this.mercuryYears).toFixed(2));
 
+  }
 }

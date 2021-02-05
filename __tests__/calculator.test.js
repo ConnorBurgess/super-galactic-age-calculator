@@ -41,6 +41,8 @@ describe('Calculator', () => {
 
   test('Should create yearsCalc method to calculate years remaining on each planet (Mercury ex: (100 * 0.24) - mercuryYears)', () => {
     currentUser.lifeExpectancy = 100;
+    currentUser.mercuryCalc();
+    currentUser.yearsCalc();
     expect(currentUser.yearsLeft).toEqual(412.5)
   });
 });
