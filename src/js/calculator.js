@@ -37,6 +37,8 @@ export default class Calculator {
     console.log(this.activePlanet)
     return (this.activePlanet === 1 ? this.yearsLeft = parseFloat(((this.lifeExpectancy / 0.24) - this.mercuryYears).toFixed(2))
       : this.activePlanet === 2 ? this.yearsLeft = parseFloat(((this.lifeExpectancy / 0.62) - this.venusYears).toFixed(2))
+      : this.activePlanet === 3 ? this.yearsLeft = parseFloat(((this.lifeExpectancy / 1.88) - this.marsYears).toFixed(2))
+      : this.activePlanet === 4 ? this.yearsLeft = parseFloat(((this.lifeExpectancy / 11.86) - this.jupiterYears).toFixed(2))
         : this.activePlanet);
   }
 
