@@ -21,7 +21,7 @@ describe('Calculator', () => {
   });
   test('Should implement method to calculate earthYears to mercuryYears (this.earthYears / (365 * 0.24))', () => {
     currentUser.mercuryCalc();
-    expect(currentUser.mercuryYears).toEqual(4.16)
+    expect(currentUser.mercuryYears).toEqual(4.17)
   });
 //     test('Should implement method to calculator earthYears to venusYears (365 * .62', () => {
 // expect(currentUser.venusYears).toEqual()
