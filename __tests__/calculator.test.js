@@ -13,6 +13,7 @@ describe('Calculator', () => {
     expect(currentUser.venusYears).toEqual(0)
     expect(currentUser.marsYears).toEqual(0)
     expect(currentUser.jupiterYears).toEqual(0)
+    expect(currentUser.earthYears).toEqual(365)  
   });
 
 });
