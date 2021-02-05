@@ -16,4 +16,10 @@ export default class Calculator {
       this.mercuryYears = parseFloat(this.mercuryYears.toFixed(2));
       return this.mercuryYears;
     }
+
+    venusCalc () {
+      this.venusYears = 365 / (365 * 0.62);
+      this.venusYears = parseFloat(this.venusYears.toFixed(2));
+      return this.venusYears;
+    }
 }
