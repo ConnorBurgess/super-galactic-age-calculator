@@ -64,6 +64,6 @@ describe('Calculator', () => {
     currentUser.lifeExpectancy = 100;
     currentUser.marsCalc();
     currentUser.yearsCalc();
-    expect(currentUser.yearsLeft).toEqual(52.67)
+    expect(currentUser.yearsLeft).toEqual(52.66)
   });
 });
