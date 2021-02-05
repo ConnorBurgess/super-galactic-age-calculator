@@ -11,4 +11,7 @@ export default class Calculator {
     this.earthYears = 365;
     }
 
+    mercuryCalc () {
+      
+    }
 }
