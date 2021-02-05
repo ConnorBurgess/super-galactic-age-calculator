@@ -53,9 +53,8 @@ describe('Calculator', () => {
   test('Should create yearsCalc method to calculate years remaining planet (Venus: (100 * 0.62) - venusYears)', () => {
     currentUser.lifeExpectancy = 100;
     currentUser.venusCalc();
-    currentUser.activePlanet = 2;
     currentUser.yearsCalc();
-    expect(currentUser.yearsLeft).toEqual(415.06)
+    expect(currentUser.yearsLeft).toEqual(159.68)
   });
 
 });
