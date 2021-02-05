@@ -23,7 +23,7 @@ describe('Calculator', () => {
     currentUser.mercuryCalc();
     expect(currentUser.mercuryYears).toEqual(4.17)
   });
-//     test('Should implement method to calculator earthYears to venusYears (365 * .62', () => {
-// expect(currentUser.venusYears).toEqual()
-//     }); 
+  test('Should implement method to calculate earthYears to venusYears (this.earthYears / (365 * 0.62))', () => {
+    expect(currentUser.venusYears).toEqual(1.61)
+  });
 });
