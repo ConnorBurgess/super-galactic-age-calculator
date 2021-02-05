@@ -12,6 +12,7 @@ export default class Calculator {
     }
 
     mercuryCalc () {
-      
+      this.mercuryYears = this.earthYears * 0.24;
+      return this.mercuryYears;
     }
 }
