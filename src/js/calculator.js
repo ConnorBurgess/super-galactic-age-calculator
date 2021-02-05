@@ -8,6 +8,7 @@ export default class Calculator {
     this.venusYears = 0;
     this.marsYears = 0;
     this.jupiterYears = 0;
+    this.earthYears = 365;
     }
 
 }
