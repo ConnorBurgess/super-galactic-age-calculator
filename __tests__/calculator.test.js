@@ -27,4 +27,7 @@ describe('Calculator', () => {
     currentUser.venusCalc();
     expect(currentUser.venusYears).toEqual(1.61)
   });
+  test('Should implement marsCalc method to calculate earthYears to marsYears (this.earthYears / (365 * 1.88))', () => {
+    expect(currentUser.marsYears).toEqual(0.53)
+  });
 });
