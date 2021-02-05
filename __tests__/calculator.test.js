@@ -60,9 +60,16 @@ describe('Calculator', () => {
     expect(currentUser.yearsLeft).toEqual(159.68)
   });
 
-  test('Should add to yearsCalc method to calculate years remaining (Venus: (100 / 1.88) - marsYears)', () => {
+  test('Should add to yearsCalc method to calculate years remaining (Mars: (100 / 1.88) - marsYears)', () => {
     currentUser.lifeExpectancy = 100;
     currentUser.marsCalc();
+    currentUser.yearsCalc();
+    expect(currentUser.yearsLeft).toEqual(52.66)
+  });
+
+  test('Should add to yearsCalc method to calculate years remaining (Jupiter: (100 / 11.86) - jupiterYears)', () => {
+    currentUser.lifeExpectancy = 100;
+    currentUser.jupiterCalc();
     currentUser.yearsCalc();
     expect(currentUser.yearsLeft).toEqual(52.66)
   });
