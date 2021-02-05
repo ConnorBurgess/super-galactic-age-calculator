@@ -4,7 +4,7 @@
 * * *
 
 ## Description  
-Project utilizes Test Driven Development concepts (Red Green Refactor) to unit test a "galactic age calculator." JavaScript incorporates ES6 features, a class and methods to run conversions from Earth age to Solar ages.
+Project utilizes Test Driven Development concepts (Red Green Refactor) to unit test a "galactic age calculator." Code incorporates JavaScript ES6 features as well as class and methods to run conversions from Earth age to Solar ages.
 
 * * *
 
@@ -19,20 +19,20 @@ Project utilizes Test Driven Development concepts (Red Green Refactor) to unit t
 * * *
 
 ## Setup instructions:  
-* Clone Repo (Link: )
+* Clone Repo (Link: https://github.com/ConnorBurgess/super-galactic-age-calculator.git )
 * Open index.html in browser
 
 * * *
 
 ## To Do:
-* N/A
+* Spinning world images
 
 * * *
 
 ## Addition comments:
 * Created on 2/5/21  
 * Currently in development and unfinished (*as of 2/5/21*)
-
+* research how to incorporate last business logic function
 * * *
 
 ## License:
