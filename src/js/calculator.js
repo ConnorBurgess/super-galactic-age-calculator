@@ -27,4 +27,9 @@ export default class Calculator {
     this.marsYears = parseFloat(this.marsYears.toFixed(2));
     return this.marsYears;
   }
+  jupiterCalc() {
+    this.jupiterYears = 365 / (365 * 11.86);
+    this.jupiterYears = parseFloat(this.jupiterYears.toFixed(2));
+    return this.jupiterYears;
+  }
 }

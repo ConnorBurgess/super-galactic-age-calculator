@@ -34,6 +34,7 @@ describe('Calculator', () => {
     expect(currentUser.marsYears).toEqual(0.53)
   });
   test('Should implement jupiterCalc method to calculate earthYears to jupiterYears (this.earthYears / (365 * 11.86))', () => {
+    currentUser.jupiterCalc();
     expect(currentUser.jupiterYears).toEqual(0.08)
   });
 });
