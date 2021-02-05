@@ -24,19 +24,23 @@ describe('Calculator', () => {
   test('Should create mercuryCalc method to calculate earthYears to mercuryYears (this.earthYears / (365 * 0.24))', () => {
     currentUser.mercuryCalc();
     expect(currentUser.mercuryYears).toEqual(4.17)
+    expect(currentUser.activePlanet).toEqual(1)
   });
 
   test('Should create venusCalc method to calculate earthYears to venusYears (this.earthYears / (365 * 0.62))', () => {
     currentUser.venusCalc();
     expect(currentUser.venusYears).toEqual(1.61)
+    expect(currentUser.activePlanet).toEqual(2)
   });
   test('Should create marsCalc method to calculate earthYears to marsYears (this.earthYears / (365 * 1.88))', () => {
     currentUser.marsCalc();
     expect(currentUser.marsYears).toEqual(0.53)
+    expect(currentUser.activePlanet).toEqual(3)
   });
   test('Should create jupiterCalc method to calculate earthYears to jupiterYears (this.earthYears / (365 * 11.86))', () => {
     currentUser.jupiterCalc();
     expect(currentUser.jupiterYears).toEqual(0.08)
+    expect(currentUser.activePlanet).toEqual(4)
   });
 
   test('Should create yearsCalc method to calculate years remaining on each planet (Mercury ex: (100 * 0.24) - mercuryYears)', () => {

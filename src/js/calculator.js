@@ -14,24 +14,24 @@ export default class Calculator {
   }
 
   mercuryCalc() {
-    this.mercuryYears = 365 / (365 * 0.24);
-    this.mercuryYears = parseFloat(this.mercuryYears.toFixed(2));
+    this.activePlanet = 1;
+    this.mercuryYears = parseFloat((365 / (365 * 0.24)).toFixed(2));
     return this.mercuryYears;
   }
 
   venusCalc() {
-    this.venusYears = 365 / (365 * 0.62);
-    this.venusYears = parseFloat(this.venusYears.toFixed(2));
+    this.activePlanet = 2;
+    this.venusYears = parseFloat((365 / (365 * 0.62)).toFixed(2));
     return this.venusYears;
   }
   marsCalc() {
-    this.marsYears = 365 / (365 * 1.88);
-    this.marsYears = parseFloat(this.marsYears.toFixed(2));
+    this.activePlanet = 3;
+    this.marsYears = parseFloat((365 / (365 * 1.88)).toFixed(2));
     return this.marsYears;
   }
   jupiterCalc() {
-    this.jupiterYears = 365 / (365 * 11.86);
-    this.jupiterYears = parseFloat(this.jupiterYears.toFixed(2));
+    this.activePlanet = 4;
+    this.jupiterYears = parseFloat((365 / (365 * 11.86)).toFixed(2));
     return this.jupiterYears;
   }
   yearsCalc() {
