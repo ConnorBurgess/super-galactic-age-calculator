@@ -8,11 +8,12 @@ export default class Calculator {
     this.venusYears = 0;
     this.marsYears = 0;
     this.jupiterYears = 0;
-    this.earthYears = 365;
+    this.earthYears = this.age * 365;
     }
 
     mercuryCalc () {
-      this.mercuryYears = this.earthYears * 0.24;
+      this.mercuryYears = 365 / (365 * 0.24);
+      this.mercuryYears = parseFloat(this.mercuryYears.toFixed(2));
       return this.mercuryYears;
     }
 }
