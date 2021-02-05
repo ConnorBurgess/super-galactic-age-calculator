@@ -17,7 +17,7 @@ describe('Calculator', () => {
     expect(currentUser.venusYears).toEqual(0)
     expect(currentUser.marsYears).toEqual(0)
     expect(currentUser.jupiterYears).toEqual(0)
-    expect(currentUser.earthYears).toEqual(365)  
+    expect(currentUser.earthYears).toEqual(365)
     expect(currentUser.activePlanet).toEqual(0)
   });
 
@@ -42,11 +42,17 @@ describe('Calculator', () => {
     expect(currentUser.jupiterYears).toEqual(0.08)
     expect(currentUser.activePlanet).toEqual(4)
   });
-
-  test('Should create yearsCalc method to calculate years remaining on each planet (Mercury ex: (100 * 0.24) - mercuryYears)', () => {
+  test('Should create yearsCalc method to calculate years remaining planet (Mercury: (100 * 0.24) - mercuryYears)', () => {
     currentUser.lifeExpectancy = 100;
     currentUser.mercuryCalc();
     currentUser.yearsCalc();
     expect(currentUser.yearsLeft).toEqual(412.5)
   });
+  test('Should create yearsCalc method to calculate years remaining planet (Venus: (100 * 0.62) - venusYears)', () => {
+    currentUser.lifeExpectancy = 100;
+    currentUser.venusCalc();
+    currentUser.yearsCalc();
+    expect(currentUser.yearsLeft).toEqual(415.06)
+  });
+
 });
