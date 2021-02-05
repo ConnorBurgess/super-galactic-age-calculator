@@ -1,6 +1,6 @@
 export default class Calculator {
   constructor() {
-    this.age = 0;
+    this.age = 1;
     this.lifeExpectancy = 0;
     this.yearsLeft = 0;
     this.pastExpectancy = ""
