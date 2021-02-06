@@ -2,11 +2,9 @@ import Calculator from './../src/js/calculator.js';
 
 describe('Calculator', () => {
   let currentUser;
+  
   beforeEach(() => {
     currentUser = new Calculator;
-  });
-  afterEach(() => {
-    currentUser.activePlanet = 0;
   });
 
   test('Should instantiate a Calculator object with properties for age, lifeExpectancy, yearsLeft, pastExpectancy, mercuryYears, venusYears, marsYears, jupiterYears', () => {
@@ -55,6 +53,7 @@ describe('Calculator', () => {
     expect(currentUser.surpassExpectancy).toEqual(95.83)
     expect(currentUser.yearsLeft).toEqual(412.5)
   });
+
   test('Should add to yearsCalc method to calculate years remaining (Venus: (100 / 0.62) - venusYears)', () => {
     currentUser.lifeExpectancy = 100;
     currentUser.venusCalc();
@@ -78,6 +77,7 @@ describe('Calculator', () => {
     expect(currentUser.surpassExpectancy).toEqual(99.92)
     expect(currentUser.yearsLeft).toEqual(8.35)
   });
+
   test('Should add to surpassedExpectancy method to calculate years number of years lived past life expectancy', () => {
     currentUser.lifeExpectancy = 0.05;
     currentUser.jupiterCalc();
