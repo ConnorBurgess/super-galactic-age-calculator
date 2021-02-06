@@ -7,10 +7,12 @@ import $ from 'jquery';
 let clicked = 0;
 $(".jumbotron").fadeIn(2500);
 document.body.style.backgroundImage = "url('https://images.wallpaperscraft.com/image/space_sky_spiral_galaxy_99967_1920x1080.jpg')";
+$("#output").fadeOut(3500);
+$("#space-invaders").hide();
+$("#space-invaders").show(2000);
 $("#button-go").click(function (event) {
   event.preventDefault();
   if (clicked === 0) {
-    $("#output").hide();
     $("#loading-screen").hide();
     $("#output").text("This is the Super Galactic Age Calculator...").fadeIn(3000);
     clicked = 1;
