@@ -2,7 +2,7 @@ import Calculator from './../src/js/calculator.js';
 
 describe('Calculator', () => {
   let currentUser;
-  
+
   beforeEach(() => {
     currentUser = new Calculator;
   });
@@ -83,6 +83,6 @@ describe('Calculator', () => {
     currentUser.jupiterCalc();
     currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
-    expect(currentUser.surpassExpectancyStr).toEqual(`You have surpassed the life expectancy on ${currentUser.activePlanet} by ${Math.abs(currentUser.surpassExpectancy)}.`)
+    expect(currentUser.surpassExpectancyStr).toEqual(`Your age on Jupiter exceeds your Earth life expectancy by 0.03 years.`)
   });
 });
