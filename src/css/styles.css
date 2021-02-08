@@ -12,6 +12,7 @@
   border-bottom-right-radius: 40vw;
   border-top-left-radius: 20vw;
   border-top-right-radius: 20vw;
+  margin-bottom: 1vw;
   display: none;
   width: 100%;
 }
@@ -31,7 +32,9 @@
   width:40vw;
   left: 11vw;
   height:35vw;
-  border: 4px solid blue;
+  background: rgb(116,131,190);
+  background: linear-gradient(90deg, rgba(116,131,190,0.3) 28%, rgba(64,97,176,0.7) 36%, rgba(75,212,136,0.3) 64%, rgba(75,81,212,0.5) 79%, rgba(75,88,212,0.4) 79%, rgba(74,109,218,0.5) 82%, rgba(90,73,229,0.4) 91%, rgba(79,73,227,0.3) 92%, rgba(73,85,231,0.3) 92%, rgba(87,73,233,0.3) 95%, rgba(92,70,252,0.1) 100%);
+  
 }
 
 #space-invaders img {
@@ -82,34 +85,38 @@
   white-space: normal;
   overflow: scroll;
   font-family: 'Monoton', cursive;
-  border:4px solid blue;
 
 }
 
 .label-text {
-  color: black;
+  color: rgb(248, 248, 248 );
   font-weight: bold;
-  text-shadow: 2px 2px lavender;
+  text-shadow: 4px 4px black;
+  font-size: 20px;
 }
 * {
   box-sizing: border-box;
 }
 
 #button-area {
-  right: 30vw;
-  top: 38vw;
+  right: 10vw;
+  top: 20vw;
   height: 10vw;
-  width: 40vw;
-  border: 4px solid rgb(194, 192, 192, 0.4);
+  width: 20vw;
   position: absolute;
 }
 #submit-form {
   display:none;
+  font-family: 'Anton', sans-serif;
 }
-  #button-go {
-    width: 10vw;
-  }
 
+#button-go {
+  width: 10vw;
+}
+
+#intro1, #intro2, #intro3, #intro4 {
+  display:none;
+}
 
 
   /* Spinning Start Animation */
