@@ -39,18 +39,19 @@ $("#go").click(function (event) {
     let pickedHobbyExpectancy = 30 - (dangerousHobby.indexOf(pickedHobby) * 3);
     currentUser.earthYears = currentUser.age * 365;
     currentUser.lifeExpectancy = currentUser.age + pickedHobbyExpectancy;
-    console.log(currentUser.lifeExpectancy)
     clicked = 1;
     $("#output").hide();
-    $("#age, #age-label, #go").hide();
+    $("#age, #age-label").hide();
+
     setTimeout(function () {
       $("#output").text(`I see you are ${currentUser.age} years old.`).fadeIn(1500);
       $("$output").fadeOut(1000);
+      $("#go, #label-go").hide();
     }, 0);
     setTimeout(function () {
       $("#output").text(`Within 5 years you will become Earth's greatest ${pickedHobby} expert. You will live for about ${pickedHobbyExpectancy} more years.`).fadeIn(1500);
       $("$output").fadeOut(2500);
-      $("#go").fadeIn(1000);
+      $("#go, #label-go").fadeIn(1000);
     }, 2500);
   }
   else if (clicked === 1) {
@@ -93,7 +94,9 @@ $("#go").click(function (event) {
     $("#output").text(currentUser.surpassExpectancyStr).fadeIn(1500);
     clicked = 10;
   } else if (clicked === 10) {
-    $("#output").text(`That is all for now. Take care!`).fadeIn(1500);
+    $("#output").text(`That is all for now. Click continue to restart.`).fadeIn(1500);
     clicked = 11;
+  } else if (clicked === 11) {
+    window.location.reload()
   }
 });
