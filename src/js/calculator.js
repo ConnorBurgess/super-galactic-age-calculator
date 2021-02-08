@@ -16,25 +16,25 @@ export default class Calculator {
 
   mercuryCalc() {
     this.activePlanet = "Mercury";
-    this.mercuryYears = parseFloat((365 / (365 * 0.24)).toFixed(2));
+    this.mercuryYears = parseFloat((this.earthYears / (365 * 0.24)).toFixed(2));
     return this.mercuryYears;
   }
 
   venusCalc() {
     this.activePlanet = "Venus";
-    this.venusYears = parseFloat((365 / (365 * 0.62)).toFixed(2));
+    this.venusYears = parseFloat((365 / (this.earthYears * 0.62)).toFixed(2));
     return this.venusYears;
   }
 
   marsCalc() {
     this.activePlanet = "Mars";
-    this.marsYears = parseFloat((365 / (365 * 1.88)).toFixed(2));
+    this.marsYears = parseFloat((365 / (this.earthYears * 1.88)).toFixed(2));
     return this.marsYears;
   }
 
   jupiterCalc() {
     this.activePlanet = "Jupiter";
-    this.jupiterYears = parseFloat((365 / (365 * 11.86)).toFixed(2));
+    this.jupiterYears = parseFloat((this.earthYears / (365 * 11.86)).toFixed(2));
     return this.jupiterYears;
   }
 
@@ -47,7 +47,7 @@ export default class Calculator {
   }
 
   surpassedExpectancy() {
-    return (this.surpassExpectancy < 0 ? this.surpassExpectancyStr = `You have surpassed the life expectancy on ${this.activePlanet} by ${Math.abs(this.surpassExpectancy)}.`
-      : this.surpassExpectancyStr = `You have surpassed the life expectancy on ${this.activePlanet} by ${Math.abs(this.surpassExpectancy)}.`)
+    return (this.surpassExpectancy < 0 ? this.surpassExpectancyStr = `Your age on ${this.activePlanet} exceeds your Earth life expectancy by ${Math.abs(this.surpassExpectancy)} years.`
+      : this.surpassExpectancyStr = `You have not yet surpassed your Earth life expectancy on ${this.activePlanet}.`)
   }
 }
