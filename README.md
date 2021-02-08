@@ -20,7 +20,7 @@ Project utilizes Test Driven Development concepts (Red Green Refactor) to unit t
 
 ## Setup instructions:  
 * Clone Repo from GitHub (Link: https://github.com/ConnorBurgess/super-galactic-age-calculator.git)
-* Ensure Node and NPM are installed [instructions here](https://www.npmjs.com/get-npm)
+* Ensure Node and NPM are installed: [instructions here](https://www.npmjs.com/get-npm)
 * Open command line and navigate to super-galactic-age-calculator directory
 * Input command $ "npm init -y" (no quotes) in terminal in order to initialize npm with new project
 * Input command $ "npm install" (no quotes) in terminal in order to install dependencies
@@ -41,6 +41,7 @@ Project utilizes Test Driven Development concepts (Red Green Refactor) to unit t
 ## Resources used:
 * Space background [here](https://images.wallpaperscraft.com/image/space_sky_spiral_galaxy_99967_1920x1080.jpg)
 * Space Invaders image [here](https://freepngimg.com/png/32291-space-invaders-transparent-picture)
+* Spinning animation code used in bottom of styles.css [here](https://codepen.io/teerapuch/pen/vLJXeR)
 ## License:
 > *&copy; Connor Burgess 2021*
 
