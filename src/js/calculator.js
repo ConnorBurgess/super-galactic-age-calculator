@@ -22,13 +22,13 @@ export default class Calculator {
 
   venusCalc() {
     this.activePlanet = "Venus";
-    this.venusYears = parseFloat((365 / (this.earthYears * 0.62)).toFixed(2));
+    this.venusYears = parseFloat((this.earthYears / (365 * 0.62)).toFixed(2));
     return this.venusYears;
   }
 
   marsCalc() {
     this.activePlanet = "Mars";
-    this.marsYears = parseFloat((365 / (this.earthYears * 1.88)).toFixed(2));
+    this.marsYears = parseFloat((this.earthYears / (365 * 1.88)).toFixed(2));
     return this.marsYears;
   }
 

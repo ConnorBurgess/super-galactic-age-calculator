@@ -42,27 +42,19 @@ $("#go").click(function (event) {
     clicked = 1;
     $("#output").hide();
     $("#age, #age-label").hide();
-
     setTimeout(function () {
-      $("#output").text(`I see you are ${currentUser.age} years old.`).fadeIn(1500);
-      $("$output").fadeOut(1000);
-      $("#go, #label-go").hide();
-    }, 0);
-    setTimeout(function () {
-      $("#output").text(`Within 5 years you will become Earth's greatest ${pickedHobby} expert. You will live for about ${pickedHobbyExpectancy} more years.`).fadeIn(1500);
+      $("#output").text(`Within 5 years you will become Earth's greatest <strong id="text-color1">${pickedHobby} expert </strong>. You will live for about ${pickedHobbyExpectancy} more years.`).fadeIn(1500);
       $("$output").fadeOut(2500);
-      $("#go, #label-go").fadeIn(1000);
-    }, 2500);
+    }, 0);
   }
   else if (clicked === 1) {
     $("#output").text(`Based on your age of ${currentUser.age} and life expectancy of ${currentUser.lifeExpectancy} we can inform you on a few interesting facts...`).fadeIn(1500);
     clicked = 2;
   } else if (clicked === 2) {
     currentUser.mercuryCalc();
-    currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
     clicked = 3;
-    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.mercuryYears}`).fadeIn(1500);
+    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.mercuryYears}. Based on your life expectancy you will live ${currentUser.yearsCalc()} more years on ${currentUser.activePlanet}`).fadeIn(1500);
   } else if (clicked === 3) {
     $("#output").text(currentUser.surpassExpectancyStr).fadeIn(1500);
     clicked = 4;

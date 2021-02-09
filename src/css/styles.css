@@ -97,7 +97,13 @@
 * {
   box-sizing: border-box;
 }
+#text-color1{
+  color:red;
+}
 
+#text-color2{
+  color:aqua;
+}
 #button-area {
   right: 10vw;
   top: 20vw;
