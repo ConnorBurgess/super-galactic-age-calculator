@@ -75,8 +75,9 @@
 
 #output {
   display: flex;
-  font-size: 32px;
+  font-size: 28px;
   color: white;
+  letter-spacing: 2px;
   width: 30vw;
   top: 9vw;
   right: 4.5vw;

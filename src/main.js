@@ -32,7 +32,7 @@ var currentUser = new Calculator;
 
 $("#go").click(function (event) {
   event.preventDefault();
-  if (clicked === 0) {
+  if (clicked === 0 && parseInt((document.getElementById('age').value)) > 0) {
     currentUser.age = parseInt((document.getElementById('age').value))
     const dangerousHobby = ["diving", "mountain climbing", "mushroom picking", "sky diving", "motorcycling", "big wave surfing", "hang gliding", "base jumping", "street luge", "banzai skydiving"];
     let pickedHobby = dangerousHobby[Math.floor(Math.random() * 9) + 1];
@@ -43,18 +43,18 @@ $("#go").click(function (event) {
     $("#output").hide();
     $("#age, #age-label").hide();
     setTimeout(function () {
-      $("#output").text(`Within 5 years you will become Earth's greatest <strong id="text-color1">${pickedHobby} expert </strong>. You will live for about ${pickedHobbyExpectancy} more years.`).fadeIn(1500);
-      $("$output").fadeOut(2500);
+      $("#output").text(`In one year you will become Earth's greatest ${pickedHobby} expert. Life expectancy: ${pickedHobbyExpectancy} more years.`).fadeIn(1500);
     }, 0);
   }
   else if (clicked === 1) {
-    $("#output").text(`Based on your age of ${currentUser.age} and life expectancy of ${currentUser.lifeExpectancy} we can inform you on a few interesting facts...`).fadeIn(1500);
+    $("#output").text(`Based on your age of ${currentUser.age} and life expectancy of ${currentUser.lifeExpectancy} we can inform you of a few interesting facts...`).fadeIn(1500);
     clicked = 2;
   } else if (clicked === 2) {
     currentUser.mercuryCalc();
+    currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
     clicked = 3;
-    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.mercuryYears}. Based on your life expectancy you will live ${currentUser.yearsCalc()} more years on ${currentUser.activePlanet}`).fadeIn(1500);
+    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.mercuryYears}. Based on your life expectancy you can live ${currentUser.yearsCalc()} more years on this tiny moonless planet.`).fadeIn(1500);
   } else if (clicked === 3) {
     $("#output").text(currentUser.surpassExpectancyStr).fadeIn(1500);
     clicked = 4;
@@ -63,8 +63,10 @@ $("#go").click(function (event) {
     currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
     clicked = 5;
-    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.venusYears}`).fadeIn(1500);
+    console.log(currentUser.yearsCalc())
+    $("#output").text(`On ${currentUser.activePlanet}, also known as the "Prehistoric planet" a ${currentUser.age} year old is ${currentUser.venusYears}. You can live ${currentUser.yearsCalc()} more years on ${currentUser.activePlanet}`).fadeIn(1500);
   } else if (clicked === 5) {
+    console.log(currentUser.yearsCalc())
     $("#output").text(currentUser.surpassExpectancyStr).fadeIn(1500);
     clicked = 6;
   } else if (clicked === 6) {
@@ -72,7 +74,7 @@ $("#go").click(function (event) {
     currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
     clicked = 7;
-    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.marsYears}`).fadeIn(1500);
+    $("#output").text(`Considering a vacation to ${currentUser.activePlanet}, Quaid? On this planet a ${currentUser.age} year old is ${currentUser.marsYears}. You can live ${currentUser.yearsCalc()} more years on ${currentUser.activePlanet}.`).fadeIn(1500);
   } else if (clicked === 7) {
     $("#output").text(currentUser.surpassExpectancyStr).fadeIn(1500);
     clicked = 8;
@@ -81,12 +83,12 @@ $("#go").click(function (event) {
     currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
     clicked = 9;
-    $("#output").text(`On planet ${currentUser.activePlanet} a ${currentUser.age} year old is ${currentUser.jupiterYears}`).fadeIn(1500);
+    $("#output").text(`Ascend to ${currentUser.activePlanet}! On this planet a ${currentUser.age} year old is ${currentUser.jupiterYears}. You can live ${currentUser.yearsCalc()} more years on ${currentUser.activePlanet}.`).fadeIn(1500);
   } else if (clicked === 9) {
     $("#output").text(currentUser.surpassExpectancyStr).fadeIn(1500);
     clicked = 10;
   } else if (clicked === 10) {
-    $("#output").text(`That is all for now. Click continue to restart.`).fadeIn(1500);
+    $("#output").text(`...and that is all for now!`).fadeIn(1500);
     clicked = 11;
   } else if (clicked === 11) {
     window.location.reload()

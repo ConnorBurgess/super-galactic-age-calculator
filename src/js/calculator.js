@@ -47,7 +47,7 @@ export default class Calculator {
   }
 
   surpassedExpectancy() {
-    return (this.surpassExpectancy < 0 ? this.surpassExpectancyStr = `Your age on ${this.activePlanet} exceeds your Earth life expectancy by ${Math.abs(this.surpassExpectancy)} years.`
+    return (this.surpassExpectancy < 0 ? this.surpassExpectancyStr = `Your current age on ${this.activePlanet} exceeds your Earth life expectancy by ${(Math.abs(this.surpassExpectancy)).toFixed(2)} years.`
       : this.surpassExpectancyStr = `You have not yet surpassed your Earth life expectancy on ${this.activePlanet}.`)
   }
 }

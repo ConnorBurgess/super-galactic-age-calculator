@@ -83,6 +83,6 @@ describe('Calculator', () => {
     currentUser.jupiterCalc();
     currentUser.yearsCalc();
     currentUser.surpassedExpectancy();
-    expect(currentUser.surpassExpectancyStr).toEqual(`Your age on Jupiter exceeds your Earth life expectancy by 0.03 years.`)
+    expect(currentUser.surpassExpectancyStr).toEqual(`Your current age on Jupiter exceeds your Earth life expectancy by 0.03 years.`)
   });
 });
